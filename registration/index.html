@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Nagarro Work</title>
+</head>
+<body>
+
+        
+
+
+        <nav class="navbar bg-green">
+            <div class="topnav-centered text-center">
+                <a href="" class="">Student Registration From</a>
+            </div>
+        </nav>
+
+       
+
+  
+
+        <div class="container">
+            <div class="row p-2">
+              <div class="col-sm mt-5 py-5 mr-4 mr-2">
+                
+
+                <div class="">
+                    <div class="row mt-4">
+                        <div class="col">
+                            <label for="" class="form-label">Name</label>
+                        </div>
+                        <div class="text-input">
+                            <div class="col">
+                                <input type="text" class="form-control" id="name" placeholder="">
+                                <p class="error_msg_text" id="error_msg_name"></p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row mt-2">
+                        <div class="col">
+                            <label for="" class="form-label">Email</label>
+                        </div>
+                        <div class="text-input">
+                            <div class="col">
+                                <input type="mail" class="form-control" id="mail" placeholder="">
+                                <p class="error_msg_text" id="error_msg_mail"></p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row mt-2">
+                        <div class="col">
+                            <label for="" class="form-label">Website</label>
+                        </div>
+                        <div class="text-input">
+                            <div class="col">
+                                <input type="link" class="form-control" id="weblink" placeholder="">
+                                <p class="error_msg_text" id="error_msg_weblink"></p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row mt-2">
+                        <div class="col">
+                            <label for="" class="form-label">Image Link</label>
+                        </div>
+                        <div class="text-input">
+                            <div class="col">
+                                <input type="link" class="form-control" id="imageLink" placeholder="">
+                                <p class="error_msg_text" id="error_msg_profile_image"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col">
+                            <label for="" class="form-label">Gender</label>
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="genderValue" id="male" value="male">
+                                <label class="form-check-label" for="flexRadioDefault1" >
+                                  Male
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="genderValue"  id="female" value="female">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  Female
+                                </label>
+                              </div>
+                              <p class="error_msg_text" id="error_msg_gender"></p>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-4">
+                        <div class="col">
+                            <label for="" class="form-label">Skills</label>
+                        </div>
+
+                        <div class="col">
+                            <div class="row ml-0">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="skillsValue" id="java" value="java">
+                                    <label class="form-check-label" for="">
+                                      Java
+                                    </label>
+                                  </div>
+
+                                  <div class="form-check ml-2">
+                                    <input class="form-check-input" type="checkbox" name="skillsValue"  id="html" value="html">
+                                    <label class="form-check-label" for="">
+                                      HTML
+                                    </label>
+                                  </div>
+
+                                  <div class="form-check ml-2">
+                                    <input class="form-check-input" type="checkbox" name="skillsValue"  id="css" value="css">
+                                    <label class="form-check-label" for="">
+                                      CSS
+                                    </label>
+                                  </div>
+
+                                  <p class="error_msg_text" id="error_msg_skill"></p>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+
+                    <div class="row mt-4">
+                        <div class="col">
+                            <button class="btn btn-primary" type="submit" onclick="submitForm()">
+                                Enroll Student
+                            </button>
+
+                            <button class="btn btn-danger" type="submit" onclick="clearForm()">
+                                Clear
+                            </button>
+                        </div>
+                    </div>
+
+                </div>                
+              </div>
+
+              <hr>
+    
+
+
+              
+            <div class="col-sm mt-5 ml-1">             
+                <div class="row justify-content-center ">
+                    <h3 ><b>Enrolled Students</b></h3>
+                </div>
+                
+                <div class="table-responsive">
+                    
+                    <table class="table table-bordered mt-2">
+                        <thead class="thead-green">
+                            <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Description</th>
+                            <th scope="col ">Image</th>
+                            
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="tbody">
+
+                            <tr class="fade-in">
+                                <th scope="row fade-in">1</th>
+                                <td>
+                                    <section>
+                                        <b class="text fade-in">Amit Dutta</b>
+                                        <h6 class="text fade-in">Male</h6>
+                                        <h6 class="text fade-in">amit.dutta@nagarro.com</h6>
+                                        <a href="www.amitDutta.com " class="fade-in">www.amitDutta.com</a>
+                                        <p class="fade-in">Java,HTML,CSS</p>
+                                    </section>
+                                </td>
+                                <td>
+                                    <div class="row justify-content-center p-2">
+                                        <img class="fade-in" src="https://image.shutterstock.com/image-vector/ui-image-placeholder-wireframes-apps-260nw-1037719204.jpg" alt="" height="100" width="100">
+                                    </div>
+                                
+                                </td>
+                            </tr>
+
+                           
+                        </tbody>
+                    </table>
+              </div>
+
+
+        
+            </div>  
+
+            </div>  
+        </div>
+     
+
+        <!-- Footer -->
+            <footer class="page-footer">
+
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">© 2020-2021 by
+                    <b> Fresher Training</b>
+                </div>
+                <!-- Copyright -->
+            
+            </footer>
+        <!-- Footer -->
+
+        <script src="script.js">
+            
+
+
+        </script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
