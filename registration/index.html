@@ -10,208 +10,218 @@
 </head>
 <body>
 
-        
-
-
+        <!-- Navbar -->
         <nav class="navbar bg-green">
             <div class="topnav-centered text-center">
                 <a href="" class="">Student Registration From</a>
             </div>
         </nav>
 
+        <!-- Navbar End -->
+
        
 
+        <!-- Main Container -->
   
 
         <div class="container">
             <div class="row p-2">
-              <div class="col-sm mt-5 py-5 mr-4 mr-2">
-                
 
-                <div class="">
+                <!-- Left Side content Of The page -->
+
+                <div class="col-sm mt-2 py-2 mr-4 ">
+
+                   <!-- Error Name Field -->
                     <div class="row mt-4">
-                        <div class="col">
+                        <div class="col-lg-4">
                             <label for="" class="form-label">Name</label>
                         </div>
                         <div class="text-input">
                             <div class="col">
                                 <input type="text" class="form-control" id="name" placeholder="">
-                                <p class="error_msg_text" id="error_msg_name"></p>
+                                <!-- Error Text Field -->
+                                <p class="error_msg_text alert alert-danger" role="alert"  id="error_msg_name"></p>
                             </div>
                         </div>
                     </div>
-    
-                    <div class="row mt-2">
-                        <div class="col">
+                    
+                    <!-- Email Text Field -->
+                    <div class="row">
+                        <div class="col-lg-4">
                             <label for="" class="form-label">Email</label>
                         </div>
                         <div class="text-input">
                             <div class="col">
                                 <input type="mail" class="form-control" id="mail" placeholder="">
-                                <p class="error_msg_text" id="error_msg_mail"></p>
+                                <!-- Error Text Field -->
+                                <p class="error_msg_text alert alert-danger" role="alert" id="error_msg_mail"></p>
                             </div>
                         </div>
                     </div>
-    
-                    <div class="row mt-2">
-                        <div class="col">
+                    
+                    <!-- Website Text Field -->
+                    <div class="row">
+                        <div class="col-lg-4">
                             <label for="" class="form-label">Website</label>
                         </div>
                         <div class="text-input">
                             <div class="col">
                                 <input type="link" class="form-control" id="weblink" placeholder="">
-                                <p class="error_msg_text" id="error_msg_weblink"></p>
+                                <!-- Error Text Field -->
+                                <p class="error_msg_text alert alert-danger" role="alert" id="error_msg_weblink"></p>
                             </div>
                         </div>
                     </div>
-    
-                    <div class="row mt-2">
-                        <div class="col">
+                    
+                    <!-- Image link Text Field -->
+                    <div class="row">
+                        <div class="col-lg-4">
                             <label for="" class="form-label">Image Link</label>
                         </div>
                         <div class="text-input">
                             <div class="col">
                                 <input type="link" class="form-control" id="imageLink" placeholder="">
-                                <p class="error_msg_text" id="error_msg_profile_image"></p>
+                                <!-- Error Text Field -->
+                                <p class="error_msg_text alert alert-danger" role="alert" id="error_msg_profile_image"></p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="row mt-4">
-                        <div class="col">
+                    
+                    <!-- Gender radio button Field -->
+                    <div class="row">
+                        <div class="col-lg-4">
                             <label for="" class="form-label">Gender</label>
                         </div>
                         <div class="col">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="genderValue" id="male" value="male">
                                 <label class="form-check-label" for="flexRadioDefault1" >
-                                  Male
+                                    Male
                                 </label>
-                              </div>
-                              <div class="form-check">
+                                </div>
+                                <div class="form-check">
                                 <input class="form-check-input" type="radio" name="genderValue"  id="female" value="female">
                                 <label class="form-check-label" for="flexRadioDefault2">
-                                  Female
+                                    Female
                                 </label>
-                              </div>
-                              <p class="error_msg_text" id="error_msg_gender"></p>
+                            </div>
+                                <!-- Error Text Field -->
+                                <p class="error_msg_text alert alert-danger" role="alert" id="error_msg_gender"></p>
                         </div>
                     </div>
-
-
-                    <div class="row mt-4">
-                        <div class="col">
+    
+                    <!-- Skills checkbox Field -->
+                    <div class="row">
+                        <div class="col-lg-4">
                             <label for="" class="form-label">Skills</label>
                         </div>
-
                         <div class="col">
                             <div class="row ml-0">
-
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="skillsValue" id="java" value="java">
                                     <label class="form-check-label" for="">
-                                      Java
+                                        Java
                                     </label>
-                                  </div>
-
-                                  <div class="form-check ml-2">
+                                    </div>
+    
+                                    <div class="form-check ml-2">
                                     <input class="form-check-input" type="checkbox" name="skillsValue"  id="html" value="html">
                                     <label class="form-check-label" for="">
-                                      HTML
+                                        HTML
                                     </label>
-                                  </div>
-
-                                  <div class="form-check ml-2">
-                                    <input class="form-check-input" type="checkbox" name="skillsValue"  id="css" value="css">
-                                    <label class="form-check-label" for="">
-                                      CSS
-                                    </label>
-                                  </div>
-
-                                  <p class="error_msg_text" id="error_msg_skill"></p>
+                                    </div>
+    
+                                    <div class="form-check ml-2">
+                                        <input class="form-check-input" type="checkbox" name="skillsValue"  id="css" value="css">
+                                        <label class="form-check-label" for="">
+                                            CSS
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- Error Text Field -->
+                                <p class="error_msg_text alert alert-danger" role="alert" id="error_msg_skill"></p>
                             </div>
-                        </div>
-                       
                     </div>
-
-
-                    <div class="row mt-4">
+                    <!-- Button Section -->
+                    <div class="row mt-2">
                         <div class="col">
                             <button class="btn btn-primary" type="submit" onclick="submitForm()">
                                 Enroll Student
                             </button>
-
-                            <button class="btn btn-danger" type="submit" onclick="clearForm()">
+    
+                            <button class="btn btn-danger mr-4" type="submit" onclick="clearForm()">
                                 Clear
                             </button>
                         </div>
-                    </div>
+                    </div>      
+        
+                  
+                </div>
 
-                </div>                
-              </div>
-
+                <!-- End Of The Left Side Form -->
+            <!-- Verticle Line -->
               <hr>
+             <!-- Verticle Line -->
     
 
 
-              
-            <div class="col-sm mt-5 ml-1">             
+            <!-- right side content of the page -->
+
+            
+            <div class="col-sm mt-4 ml-1">    
+                <!-- Main Heading -->         
                 <div class="row justify-content-center ">
                     <h3 ><b>Enrolled Students</b></h3>
                 </div>
+                <!-- End Heading -->
                 
-                <div class="table-responsive">
+                <!-- Main Table -->
+                <div class="table-responsive" id="reg-table">
                     
-                    <table class="table table-bordered mt-2">
+                    <table class="table table-border mt-4" >
+                        <!-- Table Header -->
                         <thead class="thead-green">
                             <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Description</th>
-                            <th scope="col ">Image</th>
-                            
+                              
+                                <th scope="col">Description</th>
+                                <th scope="col ">Image</th> 
                             </tr>
-
                         </thead>
-
+                        <!-- Table Body -->
                         <tbody id="tbody">
-
                             <tr class="fade-in">
-                                <th scope="row fade-in">1</th>
+                               
                                 <td>
-                                    <section>
+                                    <section class="main-table">
                                         <b class="text fade-in">Amit Dutta</b>
                                         <h6 class="text fade-in">Male</h6>
-                                        <h6 class="text fade-in">amit.dutta@nagarro.com</h6>
-                                        <a href="www.amitDutta.com " class="fade-in">www.amitDutta.com</a>
+                                        <a href="www.amitDutta.com " class="fade-in" target="_blank">www.amitDutta.com</a>
+                                        <h6 class="text fade-in" ><a href="mailto:amit.dutta@nagarro.com" target="_top" style="text-decoration: none; color: black;">amit.dutta@nagarro.com</a></h6>
+                                        
                                         <p class="fade-in">Java,HTML,CSS</p>
                                     </section>
                                 </td>
                                 <td>
                                     <div class="row justify-content-center p-2">
-                                        <img class="fade-in" src="https://image.shutterstock.com/image-vector/ui-image-placeholder-wireframes-apps-260nw-1037719204.jpg" alt="" height="100" width="100">
+                                        <a href="https://blog.udemy.com/wp-content/uploads/2014/06/shutterstock_137493509-620x620.jpg" target="_blank" rel="noopener noreferrer" ><img class="fade-in" src="https://blog.udemy.com/wp-content/uploads/2014/06/shutterstock_137493509-620x620.jpg" alt="No Image Found" height="150" width="150"></a>
                                     </div>
-                                
                                 </td>
                             </tr>
-
-                           
                         </tbody>
                     </table>
-              </div>
+                </div>
 
-
-        
+                <!-- End Table -->
             </div>  
-
             </div>  
         </div>
      
 
         <!-- Footer -->
-            <footer class="page-footer">
+            <footer class="page-footer" style="height: 80;">
 
                 <!-- Copyright -->
-                <div class="footer-copyright text-center py-3">© 2020-2021 by
+                <div class="footer-copyright text-center p-3">© 2020-2021 by
                     <b> Fresher Training</b>
                 </div>
                 <!-- Copyright -->
